@@ -1,0 +1,29 @@
+  # Questão 1
+  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  # Questão 2
+  cat countries.txt
+    # Questão 3
+  less countries.txt
+# Questão 4
+  less countries.txt
+    # Questão 5
+  grep Brazil countries.txt
+    # Questão 6
+  grep -i brazil countries.txt
+    # Questão 7
+  grep -v fox phrases.txt
+    # Questão 8
+  wc -w phrases.txt
+    # Questão 9
+  wc -l phrases.txt
+    # Questão 10
+  touch empty.tbt
+  touch empty.pdf
+    # Questão 11
+  ls -l
+    # Questão 12
+  ls -l *txt
+    # Questão 13
+  ls -l *t?t
+    # Questão 14
+  man ls
