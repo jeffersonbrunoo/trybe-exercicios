@@ -1,0 +1,13 @@
+# Questão 1
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ cd unix_tests 
+# Questão 2
+➜  unix_tests git:(main) ✗ ls -l
+# Questão 3
+➜  unix_tests git:(main) ✗ chmod a+rw bunch_of_things.txt
+➜  unix_tests git:(main) ✗ ls -l
+# Questão 4
+➜  unix_tests git:(main) ✗ chmod a-w bunch_of_things.txt
+➜  unix_tests git:(main) ✗ ls -l
+# Questão 5
+➜  unix_tests git:(main) ✗ chmod 644 bunch_of_things.txt
+➜  unix_tests git:(main) ✗ ls -l
