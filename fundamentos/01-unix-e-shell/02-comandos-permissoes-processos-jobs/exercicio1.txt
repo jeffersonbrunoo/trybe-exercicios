@@ -1,0 +1,38 @@
+# Questão 1
+➜  02-comandos-permissoes-processos-jobs git:(main) cd unix_tests
+# Questão 2
+➜  unix_tests git:(main) touch skills2.txt
+➜  unix_tests git:(main) ✗ echo "Internet" >> skills2.txt 
+➜  unix_tests git:(main) ✗ echo "Unix" >> skills2.txt
+➜  unix_tests git:(main) ✗ echo "Bash" >> skills2.txt
+# Questão 3
+➜  unix_tests git:(main) ✗ echo "CSS" >> skills2.txt 
+➜  unix_tests git:(main) ✗ echo "JavaScript" >> skills2.txt 
+➜  unix_tests git:(main) ✗ echo "React" >> skills2.txt 
+➜  unix_tests git:(main) ✗ echo "SQL" >> skills2.txt 
+➜  unix_tests git:(main) ✗ echo "PHP" >> skills2.txt 
+➜  unix_tests git:(main) ✗ sort < skills2.txt 
+# Questão 4
+➜  unix_tests git:(main) ✗ cat skills2.txt | wc -l
+# Questão 5
+➜  unix_tests git:(main) ✗ sort < skills2.txt | head -n 3 > top_skills.txt
+# Questão 6
+➜  unix_tests git:(main) ✗ touch phrases2.txt
+➜  unix_tests git:(main) ✗ echo "I’m running a little late. Eu estou um pouco atrasado." > phrases2.txt 
+➜  unix_tests git:(main) ✗ echo "Are you up to anything tonight? Você vai fazer alguma coisa hoje à noite?." >> phrases2.txt
+➜  unix_tests git:(main) ✗ echo "You’ve got to be kidding me! Você só pode estar brincando comigo! ." >> phrases2.txt
+➜  unix_tests git:(main) ✗ echo "It’s not worth it! Não vale a pena." >> phrases2.txt 
+# Questão 7
+➜  unix_tests git:(main) ✗ grep br phrases2.txt | wc -l
+# Questão 8
+➜  unix_tests git:(main) ✗ grep -v br phrases2.txt | wc -l
+# Questão 9
+➜  unix_tests git:(main) ✗ echo "brazil" >> phrases2.txt 
+➜  unix_tests git:(main) ✗ echo "alemanha" >> phrases2.txt 
+# Questão 10
+➜  unix_tests git:(main) ✗ touch countries.txt
+➜  unix_tests git:(main) ✗ echo "brazil" > countries.txt 
+➜  unix_tests git:(main) ✗ cp countries.txt bunch_of_things.txt
+➜  unix_tests git:(main) ✗ cat phrases2.txt >> bunch_of_things.txt 
+# Questão 11
+➜  unix_tests git:(main) ✗ sort bunch_of_things.txt -o bunch_of_things.txt
