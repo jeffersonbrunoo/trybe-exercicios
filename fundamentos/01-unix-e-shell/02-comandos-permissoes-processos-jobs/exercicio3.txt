@@ -1,0 +1,38 @@
+# Questão 1
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ ps
+# Questão 2
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sleep 30 &
+# Questão 3
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ ps | grep sleep
+# Questão 4
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sleep 30
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ bg
+# Questão 5
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sleep 300 &
+# Questão 6
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sleep 200
+^Z
+[2]  + 185638 suspended  sleep 200
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sleep 100
+^Z
+[3]  + 185740 suspended  sleep 100
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ 
+# Questão 7
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ jobs
+[1]    running    sleep 300
+[2]  - suspended  sleep 200
+[3]  + suspended  sleep 100
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ fg %1
+[1]    185550 running    sleep 300
+^Z
+[1]  + 185550 suspended  sleep 300
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ jobs
+[1]  + suspended  sleep 300
+[2]    suspended  sleep 200
+[3]  - suspended  sleep 100
+# Questão 8
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ bg %3
+[3]    185740 continued  sleep 100
+[3]    185740 done       sleep 100     
+# Questão 9
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ killall sleep
