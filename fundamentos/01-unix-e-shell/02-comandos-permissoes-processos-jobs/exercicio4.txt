@@ -1,0 +1,25 @@
+# Questão 1
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sudo apt-get install cmatrix
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ cmatrix
+# Questão 2
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sudo apt-get install fortune
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ fortune > fortune.txt
+# Questão 3
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ wc -w fortune.txt 
+11 fortune.txt
+# Questão 4
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sudo apt-get install sl
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sl
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sl -f
+# Questão 5
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ sudo apt-get install cowsay
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ cowsay bora bill
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ tail fortune.txt | cowsay
+# Questão 6
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ factor 42
+# Questão 7
+➜  02-comandos-permissoes-processos-jobs git:(main) ✗ tail fortune.txt | rev
+.evila era uoy elihw lufreehc eB
+.C.B yrutneC ht42 ,petohtahP --
+# Questão 8
+telnet towel.blinkenlights.nl
