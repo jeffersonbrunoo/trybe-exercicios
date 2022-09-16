@@ -6,17 +6,20 @@ Contém todas as atividades desenvolvidas por __[mim](https://www.linkedin.com/i
 
 ## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
-##### Bloco 1: [Unix, Bash e Shell Script](https://github.com/paulohbsimoes/trybe-exercises/tree/master/01-fundamentos/bloco-01-unix-bash-e-shell-script)
+##### Bloco 1: [Unix, Bash e Shell Script](https://github.com/jeffersonbrunoo/trybe-exercicios/tree/main/fundamentos/01-unix-e-shell)
 - [x] 1.3 - Fundamentos do Desenvolvimento Web
 - [x] 1.3 - Introdução - Unix & Shell
 - [x] 1.3 - Unix & Bash - Parte 1
 - [x] 1.4 - Unix & Bash - Parte 2
 
-##### Bloco 2: [Git, GitHub e Internet](https://github.com/paulohbsimoes/trybe-exercises/tree/master/01-fundamentos/bloco-02-git-github-e-internet)
+##### Bloco 2: [Git, GitHub e Internet](https://github.com/jeffersonbrunoo/trybe-exercicios/tree/main/fundamentos/02-git-github-e-internet)
 - [x] 2.1 - Git & GitHub  - O que é e para que serve
 - [x] 2.2 - Git & GitHub - Entendendo os comandos
 - [x] 2.3 - Internet - Entendendo como ela funciona
 
-##### Bloco 3: [Introdução à HTML e CSS](https://github.com/paulohbsimoes/trybe-exercises/tree/master/01-fundamentos/bloco-03-introducao-a-html-e-css)
-- [ ] 3.1 - Introdução - HTML & CSS
-- [ ] 3.1 - HTML & CSS - Estruturas de página
+
+##### Bloco 3: [Introdução à HTML e CSS](https://github.com/jeffersonbrunoo/trybe-exercicios/tree/main/fundamentos/03-introducao-a-html-e-css)
+- [x] 3.1 - Introdução - HTML & CSS
+- [x] 3.1 - HTML & CSS - Estruturas de página
+- [x] 3.2 - HTML & CSS - Primeiros passos em CSS
+- [x] 3.3 - HTML & CSS - Seletores e posicionamento
