@@ -52,3 +52,13 @@ if(angulos) {
 } else {
     console.log("os ângulos não formam um triângulo");
 }
+
+let pecaDeXadrez = "bispo";
+
+switch(pecaDeXadrez.toLocaleLowerCase()){
+    case "bispo";
+    console.log("movimento na diagonal em todo o tabuleiro");
+    break;
+
+}
+
