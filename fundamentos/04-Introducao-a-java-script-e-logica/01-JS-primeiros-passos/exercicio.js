@@ -56,9 +56,19 @@ if(angulos) {
 let pecaDeXadrez = "bispo";
 
 switch(pecaDeXadrez.toLocaleLowerCase()){
-    case "bispo";
-    console.log("movimento na diagonal em todo o tabuleiro");
-    break;
-
+    case "bispo":
+        console.log("movimento na diagonal em todo o tabuleiro");
+        break;
+    case "peão":
+        console.log("Movimento para frente e captura na diagonal");
+        break;
+    case "rei":
+        console.log("Movimento para qualquer casa adjacente");
+        break;
+    case "Rainha":
+        console.log("Move para qualquer casa em linha reta ou diagonal");
+        break;
+    default:
+        console.log("Erro, Peça inválida");
 }
 
