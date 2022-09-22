@@ -24,3 +24,14 @@ if (c > d && c > e) {
 }else {
     console.log("o maior número é: " + e + '(e)')
 }
+
+let teste = 2;
+
+
+if(teste > 0) {
+    console.log("Positive")
+}else if(teste < 0) {
+    console.log("Negative")
+}else {
+    console.log("Zero")
+}
