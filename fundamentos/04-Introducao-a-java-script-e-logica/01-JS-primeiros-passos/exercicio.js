@@ -89,3 +89,16 @@ if(nota >= 90){
 }else {
     console.log("F");
 }
+
+let a = 15;
+let b = 10;
+let c = 13;
+
+let even = false;
+
+if((a % 2 === 0 || b % 2 === 0 || c % 2 === 0)) {
+    even = true;
+};
+
+console.log(even);
+
