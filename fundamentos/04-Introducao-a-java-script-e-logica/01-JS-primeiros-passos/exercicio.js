@@ -102,3 +102,15 @@ if((a % 2 === 0 || b % 2 === 0 || c % 2 === 0)) {
 
 console.log(even);
 
+let a = 8;
+let b = 10;
+let c = 10;
+
+let odd = false;
+
+if((a % 3 === 0 || b % 3 === 0 || c % 3 === 0)) {
+    odd = true;
+};
+
+console.log(odd);
+
