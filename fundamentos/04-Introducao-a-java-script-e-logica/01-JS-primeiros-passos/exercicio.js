@@ -114,3 +114,17 @@ if((a % 3 === 0 || b % 3 === 0 || c % 3 === 0)) {
 
 console.log(odd);
 
+const cost = 40;
+const sale = 50;
+
+// valorDoCUstoTOtal = cost + impostoSobreCusto;
+// lucro = sale - valtal;orDoCUstoTO
+
+if(cost >= 0 && sale >= 0){
+    const valorDoCUstoTOtal = cost * 1.2;
+    const LucroTotal = (sale - valorDoCUstoTOtal) * 1000;
+    console.log(LucroTotal);
+}else{
+    console.log("erro");
+};
+
