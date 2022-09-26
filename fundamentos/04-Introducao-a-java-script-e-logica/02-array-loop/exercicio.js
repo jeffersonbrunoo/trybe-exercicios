@@ -39,7 +39,6 @@ if (media > 20) {
 
 // Utilizando for, descubra qual o maior valor contido no array e imprima-o;
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 let maior = numbers[0];
 
@@ -49,5 +48,45 @@ for (let index = 1; index < numbers.length; index += 1) {
 }
 console.log(maior);
 
+// Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
 
 
+let odd = 0;
+
+for (let index = 0; index < numbers.length; index += 1){
+    if (numbers[index] % 2 !== 0) {
+        odd += 1
+    }
+}
+
+if(odd === 0){
+    console.log("erro");
+} else {
+    console.log(odd);
+}
+
+// Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+
+let menor = numbers[0];
+
+for (let index = 0; index < numbers.length; index += 1) {
+    if(numbers[index] < menor)
+    menor = numbers[index]
+}
+console.log(menor);
+
+// Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado.
+
+let array = [];
+
+for (let index = 1; index <= 25; index += 1) {
+    array.push(index)
+    
+}
+console.log(array);
+
+// Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
+
+for (let index = 0; index < array.length; index += 1) {
+    console.log(array[index] / 2);
+  };
