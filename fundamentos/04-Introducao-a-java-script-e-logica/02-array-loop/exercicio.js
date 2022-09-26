@@ -90,3 +90,5 @@ console.log(array);
 for (let index = 0; index < array.length; index += 1) {
     console.log(array[index] / 2);
   };
+
+
