@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const elementH1 = document.createElement("h1");
+      elementH1.innerText = "Exercício - JavaScript DOM";
+      document.body.appendChild(elementH1);
+
+      const elementTag = document.createElement("main");
+      elementTag.className = "center-content";
+      document.body.appendChild(elementTag);
+
+      const elementSection = document.createElement("section");
+      elementSection.className = "center-content";
+      elementTag.appendChild(elementSection);
+
+      const paragraph = document.createElement("p");
+      paragraph.innerHTML = "texto";
+      elementSection.appendChild(paragraph);
+
+      const sectionLeft = document.createElement("section");
+      sectionLeft.className = "left-content";
+      elementTag.appendChild(sectionLeft);
+
+      const sectionHight = document.createElement("section");
+      sectionHight.className = "right-content";
+      elementTag.appendChild(sectionHight);
+
+      const img = document.createElement("img");
+      img.className = "small-image";
+      img.src = "https://picsum.photos/200";
+      sectionLeft.appendChild(img);
+
+      const list = document.createElement("ul");
+      sectionHight.appendChild(list);
+
+      let numbers = ["um", "dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      for (const key in numbers) {
+          const listElement = document.createElement("li");
+          listElement.innerHTML = numbers[key];
+          list.appendChild(listElement);
+      }
+
+      for (let index = 1; index <= 3; index += 1) {
+        const elementH3 = document.createElement("h3");
+        elementH3.innerHTML = "texto";
+        elementTag.appendChild(elementH3);
+        
+      }
+      const title = document.querySelector("h1");
+      title.className = "title";
+
+    </script>
+  </body>
+</html>
