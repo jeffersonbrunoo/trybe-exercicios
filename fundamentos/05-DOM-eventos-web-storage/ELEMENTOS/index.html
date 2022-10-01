@@ -105,6 +105,23 @@
       const title = document.querySelector("h1");
       title.className = "title";
 
+      const elementsH3 = document.getElementsByTagName("h3");
+      for (let index = 0; index < 3; index += 1) {
+        elementsH3[index].className = "description";
+      }
+
+      const deletedSection = document.getElementsByClassName("left-content")[0];
+      elementTag.removeChild(deletedSection);
+
+      const centerSection = document.getElementsByClassName("hight-content")[0];
+      centerSection.style.marginRight = "auto";
+
+      const sectionCenterContent = document.getElementsByClassName('center-content')[0];
+      sectionCenterContent.parentNode.style.backgroundColor = 'green';
+
+      const ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
     </script>
   </body>
 </html>
