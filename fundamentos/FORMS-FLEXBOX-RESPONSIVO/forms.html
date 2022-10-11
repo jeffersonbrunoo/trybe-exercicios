@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+            <label for="name" id="name">Nome:</label>
+                <input type="text" name="opcao" minlength="10" maxlength="40">
+            </label><br>
+            <label for="email">Email:</label>
+                <input type="email" name="email" id="email" minlength="10" maxlength="50"><br>
+                <input type="radio" name="opcao1" id="opcao1">
+            <label for="opcao1">Cidade</label>
+                <input type="radio" name="opcao2" id="opcao2">
+            <label for="opcao1">Campo</label>
+                <input type="radio" name="opcao3" id="opcao2">
+            <label for="opcao1">Praia</label>
+                <input type="radio" name="opcao4" id="opcao2">
+            <label for="opcao1">Montanha</label><br>
+        <label for="answer">Espaço para digitar a resposta:</label><br>
+            <textarea name="answer" id="answer" cols="30" rows="10" maxlength="500"></textarea><br><br>
+        <label for="date">Data:</label>
+            <input type="date" name="date" id="date"><br><br>
+        <label for="concordo1">Concordo 1</label>
+            <input type="checkbox" name="concordo1" id="concordo1"><br>
+        <label for="concordo2">Concordo 2</label>
+            <input type="checkbox" name="concordo2" id="concordo2">
+    </fieldset>
+    <button type="submit" id="submit-btn" disabled>Enviar</button>
+    <button type="button" id="clear-btn">Apagar informações</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
