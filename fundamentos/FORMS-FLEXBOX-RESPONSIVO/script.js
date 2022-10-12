@@ -21,6 +21,12 @@ INPUT_TEXT.addEventListener('keypress', (event) => {
 
 function btnSubmit(event) {
     event.preventDefault();
+    const validation = textInputValidation();
+    if (validation === false) {
+      alert('Dados inválidos');
+    } else {
+      alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
+    }
 };
 
 window.onload = function () {
@@ -28,6 +34,9 @@ window.onload = function () {
     submitBtn.addEventListener("click", btnSubmit);
     const clearBtn = document.querySelector('#clear-btn');
     clearBtn.addEventListener('click', clearFields);
+    const concordo2 = document.querySelector('#concordo2');
+    concordo2.addEventListener("change", enableSubmit)
+
 };
 
 function clearFields() {
@@ -41,6 +50,29 @@ function clearFields() {
     textArea.value = '';
   }
 
+  function enableSubmit() {
+    const submitBtn = document.querySelector('#submit-btn');
+    const concordo2 = document.querySelector('#concordo2');
+    submitBtn.disabled = !concordo2.checked;
+  }
+
+  function textInputValidation() {
+    const email = document.querySelector('#email').value.length;
+    const invalidEmail = email < 10 || email > 50;
   
+    const name = document.querySelector('#name').value.length;
+    const invalidName = name < 10 || name > 40;
+  
+    const reason = document.querySelector('#answer').value.length;
+    const invalidReason = reason > 500;
+  
+    if (invalidEmail || invalidName || invalidReason) {
+      return false;
+    }
+    else {
+      return true;
+    }
+  }
+
 
 
